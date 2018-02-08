@@ -2,15 +2,78 @@
 <head>
 	<title>Spencer's PC Parts</title>
 </head>
+<style>
+body 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Ariel;
+    padding: 30px;
+    background: url("bg1.jpg");
+}
+
+.header {
+    padding: 1px;
+    font-size: 40px;
+    text-align: center;
+}
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}	
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 20px;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+</style>
 <body>
-<h2 style="text-align: center;"><strong>Spencer&#39;s PC Sales</strong></h2>
+	<div class="header">
+<h2>Spencer&#39;s PC Services & Sales</h2>
+</div>
 
-<p style="text-align: center;"><button>Home</button><button>Promotions</button><button>Services</button><button>PCs</button><button>Parts</button><button>Warranty</button></p>
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="parts.html">Parts</a>
+  <a href="pc.html">PCs</a>
+  <a href="promo.html">Current Promotions</a>
+  <a href="warranty.html">Warranty</a>
+</div>
 
-<hr />
 <p style="text-align: center;"><strong>Parts</strong></p>
 
 <p style="text-align: center;"><button>Accessories</button><button>Cases</button><button>CPUs</button><button>GPUs</button><button>Memory</button><button>Motherboards</button><button>Power Supplies</button><button>Storage</button></p>
+	<form><input type="text" name="search" placeholder="Search Parts">
+</form>
+	
 
 <p style="text-align: center;">&nbsp;</p>
 </body>
