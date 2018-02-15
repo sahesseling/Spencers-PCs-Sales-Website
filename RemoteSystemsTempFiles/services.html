@@ -66,6 +66,29 @@ body {
 	<li>and more!</li>
 </ul>
 
-<p>If you have a specific computer service you need and don&#39;t see it above, just call us at 515-123-4567 and we&#39;ll see what we can do!</p>
+<p>If you have a specific computer service you need and don&#39;t see it above, just call us at 515-123-4567 or use the contact form below and we&#39;ll see what we can do!</p>
+	
+	<h3>Services Contact Form</h3>
+	<form id="SrvFm">
+  Name: <input type="text" name="name"><br>
+  Email: <input type="email" name="email"><br>
+  Phone: <input type="tel" name="phone"><br>
+  Issue: <br><textarea id="text" name="text" placeholder="Write your inquiry here." style="height:200px"></textarea><br><br>
+  
+  <input type="button" onclick="myFunction0()" value="Reset">
+  <input type="button" onclick="myFunction1()" value="Submit">  
+</form>
+
+<script>
+function myFunction1() {
+    document.getElementById("SrvFm").submit();
+}
+</script>
+<script>
+function myFunction0() {
+    document.getElementById("SrvFm").reset();
+}
+</script>
+	
 </body>
 </html>

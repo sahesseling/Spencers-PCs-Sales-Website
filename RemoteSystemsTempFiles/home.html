@@ -137,6 +137,12 @@ input[type=submit]:hover {
 
 <p>West Des Moines, Iowa 50266</p>
 	  
+<h3>Hours</h3>
+	  
+<p id="open"></p>
+
+
+	  
 		</div>
 	<div class="rightcolumn">
 		<h2>Contact Us</h2>
@@ -188,5 +194,10 @@ input[type=submit]:hover {
 	</div>
 	<hr />
 <footer>515-123-4567&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123 Jordan Creek Pkwy, West Des Moines, Iowa 50266</footer>
+<script>
+var d = new Date();
+var days = ["Sunday - Closed","Monday - Open 8am to 9pm","Tuesday - Open 8am to 9pm","Wednesday - Open 8am to 9pm","Thursday - Open 8am to 9pm","Friday - Open 8am to 9pm","Saturday - Open 9am to 7pm"];
+document.getElementById("open").innerHTML = days[d.getDay()];
+</script>
 </body>
 </html>
