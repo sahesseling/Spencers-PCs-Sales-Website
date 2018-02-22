@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
+	
+
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script> 
+$(document).ready(function(){
+    $("#flip0").click(function(){
+        $("#desktop").slideToggle("slow");
+    });
+});
+	$(document).ready(function(){
+    $("#flip1").click(function(){
+        $("#laptop").slideToggle("slow");
+    });
+});
+</script>
 	<meta charset="ISO-8859-1" />
 	<title>Spencer's PCs</title>
 </head>
@@ -40,7 +55,17 @@ body {
     background-color: #ddd;
     color: black;
 }	
+#desktop, #flip0, #laptop, #flip1 {
+    padding: 5px;
+    text-align: center;
+    background-color: #837F7F;
+    border: solid 1px #000000;
+}
 
+#desktop, #laptop {
+    padding: 50px;
+    display: none;
+}
 </style>
 <body>
 	<div class="header">
@@ -55,8 +80,11 @@ body {
   <a href="promo.html">Current Promotions</a>
   <a href="warranty.html">Warranty</a>
 </div>
-<p>New PCs:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Used PCs:</p>
-
-<p>&nbsp;</p>
+	<div id="flip0"><strong>Click to view Desktops:</strong></div>
+	<div id="desktop"><a href="https://www.avadirect.com/Avant-Garde-Gaming-PC/Configure/11682792"><img src="pc1.png" /></a></div>
+	
+	<div id="flip1"><strong>Click to view Laptops:</strong></div>
+	<div id="laptop"><a href="http://www.dell.com/en-us/shop/dell-laptops/xps-13-laptop/spd/xps-13-9360-laptop"><img src="xps13.jpg" /></a></div>
+	
 </body>
 </html>

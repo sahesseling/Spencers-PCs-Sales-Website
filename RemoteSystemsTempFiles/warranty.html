@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip1").click(function(){
+        $("#newpc").slideToggle("slow");
+    });
+});
+	$(document).ready(function(){
+    $("#flip2").click(function(){
+        $("#usedpc").slideToggle("slow");
+    });
+});
+	$(document).ready(function(){
+    $("#flip3").click(function(){
+        $("#parts").slideToggle("slow");
+    });
+});
+</script>
 	<meta charset="ISO-8859-1" />
 	<title>Warranty</title>
 </head>
@@ -40,7 +58,17 @@ body {
     background-color: #ddd;
     color: black;
 }	
+#newpc, #flip1, #usedpc, #flip2, #parts, #flip3 {
+    padding: 5px;
+    text-align: center;
+    background-color: #B7B7B7;
+    border: solid 1px #000000;
+}
 
+#newpc, #usedpc, #parts {
+    padding: 30px;
+    display: none;
+}
 </style>
 <body>
 	<div class="header">
@@ -65,21 +93,17 @@ body {
 
 <p style="text-align: center;">See below for the specific warranty we have for products we sell.&nbsp;</p>
 
-<p style="text-align: center;"><strong>For New Computers:</strong></p>
+<div id="flip1"><strong>For New Computers:</strong></div>
 
-<p style="text-align: center;">By default, all new computers we sell will come with a 1 year warranty. This warranty only covers hardware issues caused by defective hardware.</p>
+<div id="newpc">By default, all new computers we sell will come with a 1 year warranty. This warranty only covers hardware issues caused by defective hardware. You may purchase up to a 5 year warranty from us, check in store for specific pricing.</div>
 
-<p style="text-align: center;">You may purchase up to a 5 year warranty from us, check in store for specific pricing.</p>
+<div id="flip2"><strong>For Used Computers:</strong></div>
 
-<p style="text-align: center;"><strong>For Used Computers:</strong></p>
+<div id="usedpc">All used computers come with a 6 month warranty.</div>
 
-<p style="text-align: center;">All used computers come with a&nbsp;6 month warranty.</p>
+<div id="flip3"><strong>For PC Parts:</strong></div>
 
-<p style="text-align: center;"><strong>For PC Parts:</strong></p>
-
-<p style="text-align: center;">All new PC parts will come with a 1 year warranty. Additional coverage is available, but due to limited supplies,&nbsp;we will often only offer a refund.</p>
-
-<p style="text-align: center;">We recommend you check to see if the manufacturer has a warranty extension option, as they will have your specific product in stock in their RMA produce if needed.</p>
+<div id="parts">All new PC parts will come with a 1 year warranty. Additional coverage is available, but due to limited supplies, we will often only offer a refund. We recommend you check to see if the manufacturer has a warranty extension option, as they will have your specific product in stock in their RMA produce if needed.</div>
 
 <p style="text-align: center;">&nbsp;</p>
 </body>
