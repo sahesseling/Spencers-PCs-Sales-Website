@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ContactUs</title>
+<style>
+.error {color: red;}
+body 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Ariel;
+    padding: 30px;
+    background: url("bg1.jpg");
+}
+
+.header {
+    padding: 1px;
+    font-size: 40px;
+    text-align: center;
+}
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}	
+.leftcolumn {   
+    float: left;
+    width: 60%;
+}
+.rightcolumn {
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+}
+	* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+<body>
+	<div class="header">
+<h2>Spencer&#39;s PC Services & Sales</h2>
+</div>
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="parts.html">Parts</a>
+  <a href="pc.html">PCs</a>
+  <a href="promo.html">Current Promotions</a>
+  <a href="warranty.html">Warranty</a>
+</div>
+	
+<h2>Services Request Contact Form</h2>
+<p><span class="error">* required field.</span></p>
+<form action="servrequest.php" method="post">
+    Name:<br> <input type="text" name="name">
+  <span class="error">*</span>
+  <br>
+  E-mail:<br> <input type="text" name="email">
+  <span class="error">*</span>
+  <br>
+	Subject: <br> <input type="text" name="subject"><span class="error">*</span><br>
+	
+  Comment:<br> <textarea name="comment" rows="4" cols="35"></textarea>
+  <br>
+ <input type="submit">  
+	</form>
+
+	
+	
+	
+</body>
+</html>
